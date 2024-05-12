@@ -1,12 +1,5 @@
-country = 'us'
-
-case country
-when 'japan'
-  'こんにちは'
-when 'us'
-  'Hello'
-when 'italy'
-  'Ciao'
-else
-  '???'
+def multiple_of_three?(n)
+  n % 3 == 0
 end
+
+puts multiple_of_three?(6)

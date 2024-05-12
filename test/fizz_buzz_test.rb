@@ -1,15 +1,3 @@
-def fizz_buzz(n)
-  if n % 15 == 0
-    'Fizz_Buzz'
-  elsif n % 5 == 0
-    'Buzz'
-  elsif n % 3 == 0
-    'Fizz'
-  else
-    n.to_s
-  end
-end
-
 require 'minitest/autorun'
 
 class FizzBuzzTest < Minitest::Test
@@ -24,11 +12,3 @@ class FizzBuzzTest < Minitest::Test
     assert_equal 'Fizz_Buzz', fizz_buzz(16)
   end
 end
-
-# puts fizz_buzz(2)
-# puts fizz_buzz(3)
-# puts fizz_buzz(5)
-# puts fizz_buzz(6)
-# puts fizz_buzz(10)
-# puts fizz_buzz(15)
-# puts fizz_buzz(30)

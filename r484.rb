@@ -15,6 +15,6 @@ areas = []
 
 # puts areas
 
-dimensions.each_with_index do |length, width, i|
+dimensions.each_with_index do |(length, width), i|
   puts "length: #{length}, width: #{width}, i: #{i}"
 end

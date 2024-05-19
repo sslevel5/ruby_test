@@ -1,12 +1,12 @@
 class User
   attr_accessor :name
 
-  def initializa(name)
+  def initialize(name)
     @name = name
   end
 
   def rename_to_bob
-    name = 'Bob'
+    self.name = 'Bob'
   end
 
   def rename_to_carol
@@ -21,7 +21,7 @@ end
 user = User.new('Alice')
 
 user.rename_to_bob
-put user.name
+puts user.name
 
 user.rename_to_carol
 puts user.name

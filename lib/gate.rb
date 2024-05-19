@@ -1,13 +1,9 @@
 class Gate
-  STAIONS = [:umeda, :juso, :mikuni]
+  STATIONS = [:umeda, :juso, :mikuni]
   FARES = [160, 190]
 
   def initialize(name)
     @name = name
-  end
-
-  def enter(ticket)
-    ticket.stamp(@name)
   end
 
   def enter(ticket)
@@ -17,9 +13,13 @@ class Gate
     true
   end
 
-  def clac_fare(ticket)
-    from = STAIONS.index(ticket.stamped_at)
-    to = STAIONS.index(@name)
+  def enter(ticket)
+    ticket.stamp(@name)
+  end
+
+  def calc_fare(ticket)
+    from = STATIONS.index(ticket.stamped_at)
+    to = STATIONS.index(@name)
     distance = to - from
     FARES[distance - 1]
   end

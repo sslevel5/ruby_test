@@ -5,10 +5,9 @@ def convert_reiwa_to_date(reiwa_text)
   year = m[:jp_year].to_i + 2018
   month = m[:month].to_i
   day = m[:day].to_i
-  begin
+
+  if Date.valid_date?(year, month, day)
     Date.new(year, month, day)
-  rescue ArgumentError
-    nil
   end
 end
 

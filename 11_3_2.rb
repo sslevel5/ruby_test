@@ -25,3 +25,16 @@ records.each do |record|
     puts "not match: #{record}"
   end
 end
+
+@n = 1
+
+case 1
+in ^@n
+  '1です'
+end
+
+n = @n
+
+case 1
+  '1です'
+end

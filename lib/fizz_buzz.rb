@@ -1,17 +1,17 @@
-require 'debug'
+# require 'debug'
 
-def fizz_buzz(n)
-  # binding.break
-  if n % 15 == 0
-    'Fizz_Buzz'
-  elsif n % 5 == 0
-    'Buzz'
-  elsif n % 3 == 0
-    'Fizz'
-  else
-    n.to_s
-  end
-end
+# def fizz_buzz(n)
+#   # binding.break
+#   if n % 15 == 0
+#     'Fizz_Buzz'
+#   elsif n % 5 == 0
+#     'Buzz'
+#   elsif n % 3 == 0
+#     'Fizz'
+#   else
+#     n.to_s
+#   end
+# end
 
 
 
@@ -22,3 +22,16 @@ end
 # puts fizz_buzz(10)
 # puts fizz_buzz(15)
 # puts fizz_buzz(30)
+
+
+def fizz_buzz(n)
+  if n % 15 == 0
+    'Fizz Buzz'
+  elsif n % 3 == 0
+    'Fizz'
+  elsif n % 5 == 0
+    'Buzz'
+  else
+    n.to_s
+  end
+end
